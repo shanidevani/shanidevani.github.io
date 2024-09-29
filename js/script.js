@@ -19,6 +19,27 @@ let progresspython = setInterval(() => {
   }
 }, pythonspeed);
 
+// power bi css progress circular bar 
+let powerbiProgress = document.querySelector(".power-bi-css"),
+  powerbiValue = document.querySelector(".power-bi-progress");
+
+let powerbiStartValue = 0,
+  powerbiEndValue = 80,
+  powerbispeed = 30;
+
+let progresspowerbi = setInterval(() => {
+  powerbiStartValue++;
+
+  powerbiValue.textContent = `${powerbiStartValue}%`;
+  powerbiProgress.style.background = `conic-gradient(#fca61f ${
+    powerbiStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (powerbiStartValue == powerbiEndValue) {
+    clearInterval(progresspowerbi);
+  }
+}, powerbispeed);
+
 // Rcss progress circular bar 
 let rProgress = document.querySelector(".r-css"),
   rValue = document.querySelector(".r-progress");
@@ -39,6 +60,27 @@ let progressr = setInterval(() => {
     clearInterval(progressr);
   }
 }, rspeed);
+
+// tableau css progress circular bar 
+let tableauProgress = document.querySelector(".tableau-css"),
+  tableauValue = document.querySelector(".tableau-progress");
+
+let tableauStartValue = 0,
+  tableauEndValue = 80,
+  tableauspeed = 30;
+
+let progresstableau = setInterval(() => {
+  tableauStartValue++;
+
+  tableauValue.textContent = `${tableauStartValue}%`;
+  tableauProgress.style.background = `conic-gradient(#6f34fe ${
+    tableauStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (tableauStartValue == tableauEndValue) {
+    clearInterval(progresstableau);
+  }
+}, tableauspeed);
 
 // odoocss progress circular bar 
 let odooProgress = document.querySelector(".odoo-css"),
@@ -61,6 +103,27 @@ let progressodoo = setInterval(() => {
   }
 }, odoospeed);
 
+// datacss progress circular bar 
+let dataProgress = document.querySelector(".data-css"),
+  dataValue = document.querySelector(".data-progress");
+
+let dataStartValue = 0,
+  dataEndValue = 90,
+  dataspeed = 30;
+
+let progressdata = setInterval(() => {
+  dataStartValue++;
+
+  dataValue.textContent = `${dataStartValue}%`;
+  dataProgress.style.background = `conic-gradient(#20c997 ${
+    dataStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (dataStartValue == dataEndValue) {
+    clearInterval(progressdata);
+  }
+}, dataspeed);
+
 // htmlcss progress circular bar 
 let htmlProgress = document.querySelector(".html-css"),
   htmlValue = document.querySelector(".html-progress");
@@ -81,69 +144,27 @@ let progresshtml = setInterval(() => {
     clearInterval(progresshtml);
   }
 }, htmlspeed);
-// javasript progress circular bar 
-let javascriptProgress = document.querySelector(".javascript"),
-  javascriptValue = document.querySelector(".javascript-progress");
 
-let javascriptStartValue = 0,
-  javascriptEndValue = 75,
-  jsspeed = 30;
+// excelcss progress circular bar 
+let excelProgress = document.querySelector(".excel-css"),
+  excelValue = document.querySelector(".excel-progress");
 
-let progressjs = setInterval(() => {
-  javascriptStartValue++;
+let excelStartValue = 0,
+  excelEndValue = 85,
+  excelspeed = 30;
 
-  javascriptValue.textContent = `${javascriptStartValue}%`;
-  javascriptProgress.style.background = `conic-gradient(#7d2ae8 ${
-    javascriptStartValue * 3.6
+let progressexcel = setInterval(() => {
+  excelStartValue++;
+
+  excelValue.textContent = `${excelStartValue}%`;
+  excelProgress.style.background = `conic-gradient(#3f396d ${
+    excelStartValue * 3.6
   }deg, #ededed 0deg)`;
 
-  if (javascriptStartValue == javascriptEndValue) {
-    clearInterval(progressjs);
+  if (excelStartValue == excelEndValue) {
+    clearInterval(progressexcel);
   }
-}, jsspeed);
-
-// php progress circular bar 
-let phpProgress = document.querySelector(".php"),
-  phpValue = document.querySelector(".php-progress");
-
-let phpStartValue = 0,
-  phpEndValue = 80,
-  phpspeed = 30;
-
-let progressphp = setInterval(() => {
-  phpStartValue++;
-
-  phpValue.textContent = `${phpStartValue}%`;
-  phpProgress.style.background = `conic-gradient(#20c997 ${
-    phpStartValue * 3.6
-  }deg, #ededed 0deg)`;
-
-  if (phpStartValue == phpEndValue) {
-    clearInterval(progressphp);
-  }
-}, phpspeed);
-
-// reactjs progress circular bar 
-let reactProgress = document.querySelector(".reactjs"),
-  reactValue = document.querySelector(".reactjs-progress");
-
-let reactStartValue = 0,
-  reactEndValue = 30,
-  rjsspeed = 30;
-
-let progressreact = setInterval(() => {
-  reactStartValue++;
-
-  reactValue.textContent = `${reactStartValue}%`;
-  reactProgress.style.background = `conic-gradient(#3f396d ${
-    reactStartValue * 3.6
-  }deg, #ededed 0deg)`;
-
-  if (reactStartValue == reactEndValue) {
-    clearInterval(progressreact);
-  }
-}, rjsspeed);
-
+}, excelspeed);
 
 // filter using javascript
 $(document).ready(function () {

@@ -44,7 +44,8 @@ body{
 }
 /* styling home section starts */
 .home{
-    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    /*background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);*/
+    background: linear-gradient(33deg, rgba(232,224,255,1) 0%, rgba(235,249,255,1) 100%);
     padding: 30px 0px 10px 0px;
 }
 .home h2{
@@ -141,7 +142,8 @@ body{
 
 /* skill section starts */
 .skill{
-    background-color: rgb(234, 234, 249);
+    /*background-color: rgb(234, 234, 249);*/
+    background-color: rgb(232, 224, 255);
 }
 .progress-card{
     padding: 12% 10% 10% 15%;
@@ -179,19 +181,28 @@ body{
 .html-progress{
     color: #3f396d;
 }
+.excel-progress{
+    color: #3f396d;
+}
 .python-progress{
     color: #fca61f;
 }
-.javascript-progress{
-    color: #6f34fe;
+.power-bi-progress{
+    color: #fca61f;
 }
 .r-progress{
+    color: #6f34fe;
+}
+.tableau-progress{
     color: #6f34fe;
 }
 .odoo-progress{
     color: #20c997;
 }
-.reactjs-progress{
+.data-progress{
+    color: #20c997;
+}
+.communication-progress{
     color: #3f396d;
 }
 .text{
@@ -313,7 +324,7 @@ body{
 }
 /* contact section starts */
 .contact{
-    background-color: #f3f3f3;
+    background-color: #e8e0ff;
 }
 .contact-details i{
     font-size: 1.5rem;
